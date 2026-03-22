@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cloud Engineer Portfolio</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',sans-serif;background:#0a0a0f;color:#fff;overflow-x:hidden}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px}
+.tag{background:rgba(0,212,255,0.1);border:1px solid rgba(0,212,255,0.3);color:#00d4ff;padding:8px 20px;border-radius:50px;font-size:.85em;letter-spacing:2px;text-transform:uppercase;margin-bottom:30px}
+h1{font-size:clamp(2.5em,6vw,5em);font-weight:800;line-height:1.1;margin-bottom:20px}
+h1 span{background:linear-gradient(135deg,#00d4ff,#ff9900);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.sub{color:#888;max-width:600px;line-height:1.6;margin-bottom:40px;font-size:1.1em}
+.buttons{display:flex;gap:15px;flex-wrap:wrap;justify-content:center}
+.btn{padding:14px 30px;border-radius:8px;font-size:1em;font-weight:600;text-decoration:none;transition:all .3s}
+.btn-p{background:linear-gradient(135deg,#00d4ff,#0099bb);color:#000}
+.btn-s{background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.2)}
+.stats{background:rgba(255,255,255,0.03);border-top:1px solid rgba(255,255,255,0.05);border-bottom:1px solid rgba(255,255,255,0.05);padding:30px 20px;display:flex;justify-content:center;gap:60px;flex-wrap:wrap}
+.stat{text-align:center}
+.num{font-size:2.5em;font-weight:800;background:linear-gradient(135deg,#00d4ff,#ff9900);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.lbl{color:#666;font-size:.85em;text-transform:uppercase;letter-spacing:1px;margin-top:5px}
+.section{padding:80px 20px;max-width:1100px;margin:0 auto}
+.stag{color:#00d4ff;font-size:.85em;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+.section h2{font-size:clamp(1.8em,4vw,2.8em);font-weight:800;margin-bottom:15px}
+.desc{color:#666;font-size:1.1em;margin-bottom:50px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:25px;transition:all .3s}
+.card:hover{border-color:rgba(0,212,255,0.2);transform:translateY(-5px);background:rgba(0,212,255,0.05)}
+.icon{font-size:2.5em;margin-bottom:15px}
+.card h3{font-size:1.1em;margin-bottom:8px}
+.card p{color:#666;font-size:.9em;line-height:1.5}
+.badge{display:inline-block;margin-top:15px;padding:4px 12px;border-radius:50px;font-size:.75em;font-weight:600}
+.done{background:rgba(0,255,136,0.1);color:#00ff88;border:1px solid rgba(0,255,136,0.2)}
+.progress{background:rgba(255,153,0,0.1);color:#ff9900;border:1px solid rgba(255,153,0,0.2)}
+.timeline{position:relative;padding-left:30px}
+.timeline::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:linear-gradient(180deg,#00d4ff,#ff9900,transparent)}
+.titem{position:relative;padding:0 0 40px 30px}
+.tdot{position:absolute;left:-39px;top:5px;width:16px;height:16px;border-radius:50%;background:#00d4ff;border:3px solid #0a0a0f;box-shadow:0 0 10px rgba(0,212,255,0.5)}
+.tdate{color:#00d4ff;font-size:.8em;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px}
+.titem h3{font-size:1.2em;margin-bottom:8px}
+.titem p{color:#666;font-size:.95em;line-height:1.6}
+.sinfo{background:rgba(0,212,255,0.05);border:1px solid rgba(0,212,255,0.1);border-radius:16px;padding:30px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-top:50px}
+.si{text-align:center}
+.si .l{color:#444;font-size:.8em;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
+.si .v{color:#00d4ff;font-size:1em;font-weight:600}
+footer{text-align:center;padding:40px 20px;border-top:1px solid rgba(255,255,255,0.05);color:#333;font-size:.9em}
+footer span{color:#00d4ff}
+</style>
+</head>
+<body>
+<section class="hero">
+<div class="tag">⚡ AWS Speed Run 2026</div>
+<h1>Building My Path to<br><span>Cloud Engineering</span></h1>
+<p class="sub">From zero to cloud architect — one command at a time. Bengaluru, India 📍</p>
+<div class="buttons">
+<a href="#skills" class="btn btn-p">View My Skills</a>
+<a href="#journey" class="btn btn-s">My Journey</a>
+</div>
+</section>
+<div class="stats">
+<div class="stat"><div class="num">10+</div><div class="lbl">Linux Commands</div></div>
+<div class="stat"><div class="num">7</div><div class="lbl">Days Learning</div></div>
+<div class="stat"><div class="num">1</div><div class="lbl">Live AWS Server</div></div>
+<div class="stat"><div class="num">12</div><div class="lbl">Week Goal</div></div>
+</div>
+<div class="section" id="skills">
+<div class="stag">// Skills</div>
+<h2>What I've Mastered</h2>
+<p class="desc">Every skill earned through hands-on practice — no shortcuts.</p>
+<div class="grid">
+<div class="card"><div class="icon">🐧</div><h3>Linux Fundamentals</h3><p>File system navigation, permissions, processes, bash commands on real servers.</p><span class="badge done">✓ Completed</span></div>
+<div class="card"><div class="icon">🌐</div><h3>Networking Basics</h3><p>IP addressing, subnets, DNS resolution, TCP/UDP protocols.</p><span class="badge done">✓ Completed</span></div>
+<div class="card"><div class="icon">☁️</div><h3>AWS EC2</h3><p>Launched, configured and SSH'd into real EC2 instances on AWS cloud.</p><span class="badge done">✓ Completed</span></div>
+<div class="card"><div class="icon">🔒</div><h3>AWS IAM & Security</h3><p>Root accounts, IAM users, MFA, security groups, key pairs.</p><span class="badge done">✓ Completed</span></div>
+<div class="card"><div class="icon">🌍</div><h3>AWS Global Infrastructure</h3><p>Regions, Availability Zones, Edge Locations and CloudFront CDN.</p><span class="badge done">✓ Completed</span></div>
+<div class="card"><div class="icon">🚀</div><h3>AWS Solutions Architect</h3><p>S3, RDS, VPC, Lambda, Load Balancers and more.</p><span class="badge progress">⟳ In Progress</span></div>
+</div>
+</div>
+<div class="section" id="journey">
+<div class="stag">// Journey</div>
+<h2>My Cloud Timeline</h2>
+<p class="desc">Every step documented. Every concept understood.</p>
+<div class="timeline">
+<div class="titem"><div class="tdot"></div><div class="tdate">Week 1 — March 2026</div><h3>Phase 0: Linux & Networking</h3><p>Mastered 10 Linux commands, understood IP addresses, subnets and DNS from scratch.</p></div>
+<div class="titem"><div class="tdot"></div><div class="tdate">Week 1 — March 2026</div><h3>First AWS Account</h3><p>Created AWS account, set up MFA, Budget Alerts, IAM User and AWS CloudShell.</p></div>
+<div class="titem"><div class="tdot"></div><div class="tdate">Week 1 — March 2026</div><h3>First EC2 Server 🎉</h3><p>Launched EC2 instance, SSH'd in using key pairs and deployed this portfolio live!</p></div>
+<div class="titem"><div class="tdot" style="background:#ff9900"></div><div class="tdate">Weeks 2-12 — Coming Soon</div><h3>AWS Solutions Architect</h3><p>S3, RDS, VPC networking, Lambda serverless, load balancers and certification prep.</p></div>
+</div>
+<div class="sinfo">
+<div class="si"><div class="l">Hosted On</div><div class="v">AWS EC2</div></div>
+<div class="si"><div class="l">Operating System</div><div class="v">Amazon Linux 2023</div></div>
+<div class="si"><div class="l">Web Server</div><div class="v">Apache httpd</div></div>
+<div class="si"><div class="l">AWS Region</div><div class="v">ap-southeast-2</div></div>
+<div class="si"><div class="l">Instance Type</div><div class="v">t3.micro</div></div>
+<div class="si"><div class="l">Status</div><div class="v">🟢 Live</div></div>
+</div>
+</div>
+<footer><p>Built from scratch on <span>AWS EC2</span> · No prior experience · <span>Week 1 of 12</span> · March 2026</p></footer>
+</body>
+</html>
